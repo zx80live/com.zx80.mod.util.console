@@ -1,5 +1,12 @@
 ## Linux console CSS utility
 
+####Setup:
+1. Build project: `> sbt compile`
+2. Publish to local repository: `> sbt publish-local`
+3. Import dependencies in your project:
+```
+"com-zx80-mod-util-console" % "com-zx80-mod-util-console_2.11" % "1.0"
+```
 
 ### Usage
 See [example usage](https://github.com/zx80live/com.zx80.mod.util.console/blob/master/src/test/scala/com/zx80/mod/util/console/ConsoleCSSSpec.scala)

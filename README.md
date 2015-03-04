@@ -31,5 +31,6 @@ println("This is header string printed by println".attr(cssHeader))
 println("This is term string printed by println".attr(cssTerm))
 
 // use string interpolation
+println(""" hello ${"world".attr(cssHeader)}  """)
 println(""" Some text with ${"bold".attr(Format.Bold|Foreground.Green)} and ${"yellow".attr(Foreground.Yellow)}  """)
 ```

@@ -2,10 +2,10 @@
 
 ####Setup:
 1. Build project: `> sbt compile`
-2. Publish to local repository: `> sbt publish-local`
+2. Publish to local repository: `> sbt publishLocal`
 3. Import dependencies in your project:
 ```
-"com-zx80-mod-util-console" % "com-zx80-mod-util-console_2.11" % "1.0"
+libraryDependencies += "com.zx80.util" %% "console-utils" % "1.0"
 ```
 
 ### Usage

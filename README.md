@@ -25,10 +25,11 @@ printlnStyled("This is warning string printed by printStyled", cssWarn)
 printlnStyled("This is header string printed by printStyled", cssHeader)
 printlnStyled("This is term string printed by printStyled", cssTerm)
 
-println("---------------------------------------")
-
 // use classic println for printing styled strings
 println("This is warning string printed by println".attr(cssWarn))
 println("This is header string printed by println".attr(cssHeader))
 println("This is term string printed by println".attr(cssTerm))
+
+// use string interpolation
+println(""" Some text with ${"bold".attr(Format.Bold|Foreground.Green)} and ${"yellow".attr(Foreground.Yellow)}  """)
 ```
